@@ -1,0 +1,13 @@
+Name: Users
+Id: g=8cdfe95c558e909385d4fe7ddc9a2655
+Type: UsersCategoryFolder
+Children:
+- Name: user
+  Id: g=aa90209b378f0e91076009d2cdd58f21
+  Type: UserType
+- Name: administrator
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=f7a5ad838496926fc611cb6a0a4de3ff

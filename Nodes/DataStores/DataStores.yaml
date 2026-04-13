@@ -1,0 +1,357 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: EmbeddedDatabase
+  Id: g=48f62e35e4668b414fb451928ee3340d
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: Recipes
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Id
+          Type: StoreColumn
+          DataType: UInt32
+          Children:
+          - Name: PrimaryKey
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: AutoIncrement
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: Version
+          Type: StoreColumn
+          DataType: String
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: RecipeSchemaName
+          Type: StoreColumn
+          DataType: String
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: RecipeSchemaNamespaceUri
+          Type: StoreColumn
+          DataType: String
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: RecipeSchemaTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: CreatedAt
+          Type: StoreColumn
+          DataType: DateTime
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: ModifiedAt
+          Type: StoreColumn
+          DataType: DateTime
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+    - Name: RecipeItems
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Id
+          Type: StoreColumn
+          DataType: UInt32
+          Children:
+          - Name: PrimaryKey
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: AutoIncrement
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: RecipeId
+          Type: StoreColumn
+          DataType: UInt32
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: RelativeBrowsePath
+          Type: StoreColumn
+          DataType: String
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: TypeId
+          Type: StoreColumn
+          DataType: String
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+    - Name: RecipeDataItems
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Id
+          Type: StoreColumn
+          DataType: UInt32
+          Children:
+          - Name: PrimaryKey
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: AutoIncrement
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: RecipeItemId
+          Type: StoreColumn
+          DataType: UInt32
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: RelativeBrowsePath
+          Type: StoreColumn
+          DataType: String
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: ElementAccess
+          Type: StoreColumn
+          DataType: String
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: DataTypeId
+          Type: StoreColumn
+          DataType: String
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: Value
+          Type: StoreColumn
+          DataType: String
+          Children:
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+    - Name: RecipeMetadata_RecipeSchema
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: RecipeId
+          Type: StoreColumn
+          DataType: UInt32
+          Children:
+          - Name: PrimaryKey
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Nullable
+            Type: BaseDataVariableType
+            DataType: Boolean
+        - Name: Approved
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: Used
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: Deprecated
+          Type: StoreColumn
+          DataType: Boolean
+    - Name: Oee
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: ActiveSeconds
+          Type: StoreColumn
+          DataType: UInt32
+        - Name: Cycles
+          Type: StoreColumn
+          DataType: UInt32
+        - Name: GasConsumption
+          Type: StoreColumn
+          DataType: UInt32
+        - Name: ElectricityConsumption
+          Type: StoreColumn
+          DataType: UInt32
+        - Name: OvenId
+          Type: StoreColumn
+          DataType: String
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
+  - Class: Reference
+    Target: ns=27;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=67
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ovenDemoDatabase"

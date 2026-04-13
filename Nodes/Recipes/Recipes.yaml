@@ -1,0 +1,100 @@
+Name: Recipes
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema
+  Id: g=8c3f531b03a7988b1ff65d705d8e3988
+  Type: RecipeSchema
+  Children:
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_Demo_RecipeX/Model/RecipeTarget/OptixOvenRecipeTarget"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_Demo_RecipeX/DataStores/EmbeddedDatabase"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: Status
+    Type: BaseDataVariableType
+    DataType: RecipeSchemaStatus
+    AccessLevel: Read
+  - Name: Metadata
+    Type: BaseObjectType
+    Children:
+    - Name: Approved
+      Type: Metadata
+      DataType: Boolean
+      ReferenceType: HasOrderedComponent
+    - Name: Used
+      Type: Metadata
+      DataType: Boolean
+      ReferenceType: HasOrderedComponent
+    - Name: Deprecated
+      Type: Metadata
+      DataType: Boolean
+      ReferenceType: HasOrderedComponent
+  - Class: Reference
+    Target: ns=21;i=16
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=18
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=20
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=23
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=26
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=28
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=36
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=73
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=79
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=91
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=59
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=61
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=63
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=65
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=175
+    Direction: Forward

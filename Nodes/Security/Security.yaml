@@ -1,0 +1,6 @@
+Name: Security
+Type: SecurityCategoryFolder
+Children:
+- File: Users/Users.yaml
+- File: Groups/Groups.yaml
+- File: Roles/Roles.yaml

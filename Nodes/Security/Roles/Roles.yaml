@@ -1,0 +1,6 @@
+Name: Roles
+Type: RolesCategoryFolder
+Children:
+- Name: administrators
+  Id: g=f7a5ad838496926fc611cb6a0a4de3ff
+  Type: ns=1;RoleType

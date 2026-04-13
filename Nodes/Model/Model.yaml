@@ -1,0 +1,6 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Types/Types.yaml
+- File: Ovens/Ovens.yaml
+- File: RecipeTarget/RecipeTarget.yaml

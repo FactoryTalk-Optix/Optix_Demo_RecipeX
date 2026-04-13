@@ -1,0 +1,5 @@
+Name: Types
+Type: FolderType
+Children:
+- File: RecipesEditor/RecipesEditor.yaml
+- File: LoginForm/LoginForm.yaml

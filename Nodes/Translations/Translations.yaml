@@ -1,0 +1,77 @@
+Name: Translations
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [62,2],
+    "Body": [
+     "","en-US",
+     "Oven NW123","Oven NW123",
+     "Create","Create",
+     "Groups","Groups",
+     "EmptyUserList","No users in list",
+     "Name","Name",
+     "PasswordChangedTooRecently","Password changed too recently",
+     "Roles","Roles",
+     "Delete","Delete",
+     "Apply","Apply",
+     "Cancel","Cancel",
+     "Password","Password",
+     "Locale:","Locale:",
+     "CannotCreateUserWithEmptyUsername","Cannot create user with empty username",
+     "UnableToGetUsers","Unable to get users",
+     "UsernameAlreadyExists","Username already exists",
+     "UserNotFound","User not found",
+     "PasswordAlreadyUsed","Password already used in the past",
+     "PasswordTooShort","Password too short",
+     "UnsupportedOperation","Unsupported operation",
+     "ChangesAppliedSuccessfully","Changes applied successfully",
+     "Timestamp","Timestamp",
+     "TimedShelve","Timed Shelve",
+     "Acknowledge","Acknowledge",
+     "Acknowledge All","Acknowledge All",
+     "Active","Active",
+     "Confirm","Confirm",
+     "OneShotShelve","One-Shot Shelve",
+     "Confirm All","Confirm All",
+     "SourceName","Source Variable",
+     "Message","Message",
+     "Acked","Acked",
+     "Confirmed","Confirmed",
+     "Severity","Severity",
+     "From","From",
+     "To","To",
+     "Refresh","Refresh",
+     "Confirm password","Confirm password",
+     "Change User","Change User",
+     "Old password","Old password",
+     "New password","New password",
+     "Change password","Change password",
+     "ChangePasswordFormUnsupportedOperationMessage","Unsupported operation",
+     "Your password has expired. Please enter a new one.","Your password has expired. Please enter a new one.",
+     "ChangeUserFormOutputSuccessMessage","Change User successful",
+     "ChangeUserFormOutputErrorMessage","Authentication failed",
+     "ChangeUserFormOutputPasswordExpired","Password expired",
+     "ChangePasswordFormSuccessMessage","Password changed successfully",
+     "ChangePasswordFormWrongOldPasswordMessage","Wrong old password",
+     "ChangePasswordFormPasswordAlreadyUsedMessage","Password already used",
+     "ChangePasswordFormPasswordChangedTooRecentlyMessage","Password changed too recently",
+     "ChangePasswordFormPasswordTooShortMessage","Password too short",
+     "ChangePasswordFormUserNotFoundMessage","User not found",
+     "ChangePasswordFormPasswordMismatchMessage","Passwords do not match",
+     "LoginFormPasswordExpired","Password expired",
+     "Login","Login",
+     "Your password is expired. Please enter a new one","Your password is expired.\nPlease enter a new one.",
+     "Current User:","Current User:",
+     "Logout","Logout",
+     "LoginFormLoginSuccessful","Login successful",
+     "LoginFormAuthenticationFailed","Authentication failed",
+     "LoginFormInvalidAuthenticationModeForUser","Invalid authentication mode for user"
+    ]
+   }

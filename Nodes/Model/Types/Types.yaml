@@ -1,0 +1,154 @@
+Name: Types
+Type: FolderType
+Children:
+- Name: OptixOven
+  Id: g=a43aa699ef781a59826a1b00fd336906
+  Supertype: BaseObjectType
+  Children:
+  - Name: LastUpdate
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Name: OvenId
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: OvenName
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Cycles
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: PowerConsumption
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: GasConsumption
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: CurrentPhase
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: CurrentTemperature
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: CurrentRecipe
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Latitude
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: Longitude
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: CycleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: CurrentStatus
+    Type: OvenPhase
+    Children:
+    - Name: Duration
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Setpoint
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: InputFan
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: OutputFan
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Heating
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Name: OvenPhase1
+    Type: OvenPhase
+    Children:
+    - Name: Duration
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Setpoint
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: InputFan
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: OutputFan
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Heating
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Name: OvenPhase2
+    Type: OvenPhase
+    Children:
+    - Name: Duration
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Setpoint
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: InputFan
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: OutputFan
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Heating
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Name: OvenPhase3
+    Type: OvenPhase
+    Children:
+    - Name: Duration
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Setpoint
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: InputFan
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: OutputFan
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Heating
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Name: LastJobStarted
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Name: ns=17;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    ModellingRule: None
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 17
+      },
+      "Body": {
+       "libraryGuid": "ff9f5fb9695eea76b4a8c0579bd4dc7c",
+       "objectGuid": "0c89621377c02c0e03d2c768a1b319f8",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+- Name: OvenPhase
+  Id: g=e89a0bd42ae63c27ae8001ae5720673e
+  Supertype: BaseObjectType
+  Children:
+  - Name: Duration
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Setpoint
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: InputFan
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: OutputFan
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Heating
+    Type: BaseDataVariableType
+    DataType: Boolean
