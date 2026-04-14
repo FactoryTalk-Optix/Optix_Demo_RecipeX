@@ -250,7 +250,7 @@ Children:
         - Name: Deprecated
           Type: StoreColumn
           DataType: Boolean
-    - Name: Oee
+    - Name: UsersEventLogger
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -268,28 +268,42 @@ Children:
       - Name: Columns
         Type: BaseObjectType
         Children:
-        - Name: Timestamp
+        - Name: ActionTimeStamp
           Type: StoreColumn
-          DataType: DateTime
-        - Name: ActiveSeconds
-          Type: StoreColumn
-          DataType: UInt32
-        - Name: Cycles
-          Type: StoreColumn
-          DataType: UInt32
-        - Name: GasConsumption
-          Type: StoreColumn
-          DataType: UInt32
-        - Name: ElectricityConsumption
-          Type: StoreColumn
-          DataType: UInt32
-        - Name: OvenId
+          DataType: UtcTime
+        - Name: Username
           Type: StoreColumn
           DataType: String
-      - Name: RecordLimit
-        Type: BaseDataVariableType
-        DataType: UInt32
-        Value: 1000
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+    - Name: RecipesLogger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+        - Name: ActionTimeStamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: RecipeId
+          Type: StoreColumn
+          DataType: RecipeId
   - Class: Reference
     Target: ns=27;i=30
     Direction: Forward
@@ -354,4 +368,4 @@ Children:
   - Name: Filename
     Type: BaseDataVariableType
     DataType: String
-    Value: "ovenDemoDatabase"
+    Value: "embeddedDatabase"

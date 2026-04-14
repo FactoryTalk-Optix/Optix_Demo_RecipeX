@@ -82,15 +82,23 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
+  33:
+   Uri: 'urn:FTOptix:EventLogger'
+   Module: FTOptix.EventLogger
+   Version: 2.0
+  34:
+   Uri: 'urn:FTOptix:EventLogger:Net'
+   Module: FTOptix.EventLogger.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 3198
-  Objects: 650
-  ObjectTypes: 27
-  Variables: 2515
+  TotalNodeCount: 3325
+  Objects: 678
+  ObjectTypes: 29
+  Variables: 2612
   VariableTypes: 0
   DataTypes: 0
   Methods: 6
-  References: 78
+  References: 84
   ReferenceTypes: 0
   Files: 34
  Nodes:
